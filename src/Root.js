@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
-const App = () => {
+const Root = () => {
   return (
-    <div>
-      리액트 라우터를 배워봅시다.
-    </div>
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
   )
 };
 
-export default App;
+export default Root;
